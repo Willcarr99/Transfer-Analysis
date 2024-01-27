@@ -1,0 +1,30 @@
+39K + 3He Elastic Scattering Vernotte Optical Model (Family II, Set A) 25 MeV
+NAMELIST
+ &FRESCO hcm=0.07 rmatch=15 rintp=0.1 hnl=0.1 
+	 rnl=10.00 centre=-0.3 jtmin=0.0 jtmax=26 absend=-1.0 
+	 jump(1:6:1)= 0  0  0  0  0  0 jbord(1:6)= 0  0  0 
+	  0  0.0  0.0 kqmax=1 thmin=0.00 thmax=80.00 
+	 thinc=1.00 iter=1 nnu=36 chans=1 smats=0  
+	 xstabl=1 wdisk=1 
+	 elab(1:4)= 25  0  0  0 nlab(1:3)= 0  0  0 
+	  /
+
+ &PARTITION namep='3He' massp=3.015 zp=2 namet='39K' 
+	 masst=38.953 zt=19 qval=0.0000 nex=1  /
+ &STATES jp=0.5 bandp=1 cpot=1 jt=1.5 
+	 bandt=+1  /
+
+ &partition /
+ 
+ &POT kp=1 type=0  shape=0  at=39.000 rc=1.4  /
+ &POT kp=1 type=1  shape=0  p1=128.2 p2=1.15 
+	 p3=0.780 p4=10.9 p5=1.810 p6=0.705  /
+ &pot / 
+ 
+ &overlap / 
+ 
+ &coupling / 
+ 
+Output code for fresco input written by xfresco version 2.1
+ at Tue Apr 20 17:48:05 2021
+ 
