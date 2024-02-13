@@ -6,7 +6,7 @@
 # cp fort.3 control_3.txt
 
 # This script removes all fort files, runs fresco with new input file, then runs the python comparison plot.
-# Run in ~/Software/fresco-3.4/3He-ES
+# Run in Transfer-Analysis/3He-ES directory
 
 ############################################
 # Settings
@@ -17,7 +17,7 @@
 file=39K-3He3He-ES_Liang21MeV_global
 #adjust_dir="$(pwd)"
 #pdir=$(cd ../ && pwd)
-ppdir=$(cd ../../ && pwd)
+ppdir=$(cd ../../ && pwd) # parent of parent directory
 dest=${ppdir}/Data/Input
 #dest=${adjust_dir}/Input
 ############################################

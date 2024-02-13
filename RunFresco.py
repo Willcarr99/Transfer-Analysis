@@ -2,7 +2,7 @@ import re
 import os
 from fnmatch import fnmatch
 
-## Run Fresco for all .in files in the directory root_folder
+## Run Fresco for all .in files in the directory: root_folder
 ## Directory structure: root_folder/<E>keV/Jpi<J><pi>/l<l>/n<n>/j<j>
 ## <E> = ENSDF energy of excited state in keV (rounded to nearest integer)
 ## <J> = Total spin of exicted state

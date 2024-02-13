@@ -7,7 +7,7 @@
 # 3.) Run ./adjust.sh
 
 # This script creates temporary "control" fort files, removes all fort files, runs fresco with new input file, then runs the python comparison plot.
-# Run in ~/Software/fresco-3.4/3He-Transfer
+# Run in Transfer-Analysis directory
 
 ############################################
 # Settings
@@ -31,7 +31,7 @@ file=39K-3He-d-Transfer_40Ca${ex}keV_Jpi${J}${pi}_l${l}_n${n}_j${j}_Global3He
 
 #adjust_dir=/home/wcfox/Software/fresco-3.4/3He-Transfer
 #adjust_dir="$(pwd)"
-pdir=$(cd ../ && pwd)
+pdir=$(cd ../ && pwd) # parent of parent directory
 #dest=${adjust_dir}/Input_Global3He/${ex}keV/Jpi${J}${pi}/l${l}/n${n}/j${j}
 dest=${pdir}/Data/Input_Global3He/${ex}keV/Jpi${J}${pi}/l${l}/n${n}/j${j}
 #dest=${adjust_dir}/BindingEnergy_Test/${ex}keV
